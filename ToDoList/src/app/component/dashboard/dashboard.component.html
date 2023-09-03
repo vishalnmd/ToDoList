@@ -13,7 +13,7 @@
                 <div class="shadow">
                     <div class="input-group p-3">
                         <input type="text" class="form-control" placeholder="Enter Task" name="task" [(ngModel)]="addTaskValue">
-                        <button class="btn btn-outline-success" type="button" id="button-addon2" (click)="addTask()">+</button>
+                        <button class="btn btn-outline-success" type="button" id="button-addon2" (click)="addTask()"><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
 
@@ -24,9 +24,9 @@
                         <div class="p-2 shadow border">
                             <div class="input-group row ps-4">
                                 <div class="card col-md-9 border-0">{{task.task_name}}</div>
-                                <button class="btn btn-outline-primary col me-3" data-bs-toggle="modal" type="button"
-                                data-bs-target="#staticBackdrop" (click)="call(task)">edit</button>  
-                                <div class="btn btn-outline-danger col-1" (click) ="deleteTask(task)">X</div>  
+                                <button class="btn btn-outline-primary col me-2" data-bs-toggle="modal" type="button"
+                                data-bs-target="#staticBackdrop" (click)="call(task)"><i class="fa-regular fa-pen-to-square"></i></button>  
+                                <div class="btn btn-outline-danger col-1" (click) ="deleteTask(task)"><i class="fa-solid fa-trash"></i></div>  
                             </div>
                         </div>
                     </div>
